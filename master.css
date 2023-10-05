@@ -1,0 +1,73 @@
+.card {
+    width: 550px;
+    margin: 20px auto;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.basic , .pro {
+    float: left;
+    width: 250px;
+    background-color: #eee;
+    text-align: center;
+
+}
+
+.pro {
+    float: right;
+}
+
+.basic::before,.pro::before {
+    content: "";
+    width: 4px;
+    height: calc(100% - 20px);
+    background-color: #03A9F4;
+    position: absolute;
+    left: calc(50% - 2px);
+    top: 10px;
+}
+
+.basic::after,.pro::after {
+    content: "or";
+    box-sizing: border-box;
+    background-color: #03A9F4;
+    color: white;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: calc(50% - 12px);
+    top: calc(50% - 12px);
+}
+
+.button {
+    box-sizing: border-box;
+    background-color: #03A9F4;
+    padding: 10px;
+    margin: 10px auto;
+    width: 220px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.price {
+    box-sizing: border-box;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 10px auto;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 40px;
+}
