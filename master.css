@@ -1,0 +1,61 @@
+.parent{
+    background-color : white;
+    width: 550px;
+    height: 225px;
+    margin: 20px auto;
+    position: relative;
+}
+.seperator {
+    display: inline-block;
+}
+.seperator::before{
+    content: "Or";
+    background-color: blueviolet;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    left: 230px;
+    top: 130px;
+    color: white;
+    font-size: 8px;
+    line-height: 10px;
+}
+.seperator::after{
+    content: "";
+    width: 1px;
+    background-color: blueviolet;
+    height: 100%;
+    position: absolute;
+    left: 240px;
+    top: 21px;
+}
+.basic , .pro {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #eee;
+    width: 200px;
+    height: 225px;
+    margin: 20px;
+    position: relative;
+}
+div p{
+    background-color: blueviolet;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.free , .salary{
+    background-color: #a9a4a4;
+    text-align: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
